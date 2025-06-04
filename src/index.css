@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@theme {
+  --font-poppins: Poppins, sans-serif;
+}
+
+@keyframes scrollDot {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+.animate-wiggle:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes fadeScaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+.animate-fadeScaleIn {
+  animation: fadeScaleIn 0.8s ease forwards;
+}
+
+
+.animate-scroll-dot {
+  animation: scrollDot 1.5s infinite ease-in-out;
+}
+
+/* Already have this */
+@keyframes scalePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.scale-pulse {
+  animation: scalePulse 2s ease-in-out infinite;
+}
+
+/* Add delay classes */
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-1 {
+  animation-delay: 0.6s;
+}
+.delay-2 {
+  animation-delay: 0.9s;
+}
+.delay-3 {
+  animation-delay: 0.1s;
+}
+.delay-4 {
+  animation-delay: 1s;
+}
+.delay-5 {
+  animation-delay: 0.2;
+}
+
+/* Style the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Thumb (scrollbar handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #2c95d2;
+  border-radius: 10px;
+}
+
+/* Optional: Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #247aac;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2c95d2 #f1f1f1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* .scroll-snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.scroll-snap-child {
+  scroll-snap-align: start;
+  height: 100vh;
+} */
