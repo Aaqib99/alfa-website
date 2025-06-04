@@ -8,8 +8,6 @@ import bg3 from "../Assets/Images/main4a.png";
 import bg4 from "../Assets/Images/main2a.png";
 import bg5 from "../Assets/Images/main3a.png";
 import bg6 from "../Assets/Images/main3.jpg";
-import leftArrow from "../Assets/icons/leftArrow.svg";
-import rightArrow from "../Assets/icons/rightArrow.svg";
 
 const HeroSection = () => {
   const images = [bg1, bg4, bg3, bg2, bg5, bg6];
