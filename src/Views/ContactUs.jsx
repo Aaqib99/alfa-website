@@ -45,7 +45,6 @@ const ContactUs = () => {
           style={{ backgroundImage: `url(${Markup})` }}
         >
           <motion.div
-            // className="md:w-2/2 mb-6 md:mb-0"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
@@ -54,6 +53,7 @@ const ContactUs = () => {
             <h1 className="text-5xl text-white font-bold mb-28">Contact Us</h1>
           </motion.div>
         </div>
+        </SectionWrapperReverse>
         <motion.div
           className="md:w-2/2 mb-6 md:mb-0"
           initial={{ opacity: 0, y: 100 }}
@@ -276,7 +276,7 @@ const ContactUs = () => {
             </div>
           </div>
         </motion.div>
-      </SectionWrapperReverse>
+      
 
       {/* map */}
       <div className="w-full mt-16">

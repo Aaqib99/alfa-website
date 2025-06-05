@@ -1,9 +1,21 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-
+import { motion } from "framer-motion";
+const cardAnimation = {
+hidden: { opacity: 0, y: 40 },
+visible: { opacity: 1, y: 0 },
+};
 const OurDivisionsComponent = () => {
   return (
     <>
+    <motion.div
+              variants={cardAnimation}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+            >
+
       <div className="mt-24 flex items-center justify-center">
         <div className="container mx-auto px-4 md:px-8 flex flex-col items-center justify-center">
           <div className="md:w-full text-center">
@@ -41,6 +53,7 @@ const OurDivisionsComponent = () => {
     </div> */}
         </div>
       </div>
+        </motion.div>
       <div className="container mx-auto px-4 md:px-16">
         <ServiceCard />
       </div>

@@ -4,8 +4,13 @@ import missionIcon from "../Assets/Icons/missionIcon.svg";
 import visionIcon from "../Assets/Icons/visionIcon.svg";
 import goalsIcon from "../Assets/Icons/goalsIcon.svg";
 import SustainabilityComp from "../Components/SustainabilityComp";
-
-const Sustainability = () => {
+import SectionWrapperReverse from "../Components/SectionWrapperReverse";
+import { motion } from "framer-motion";
+const cardAnimation = {
+hidden: { opacity: 0, y: 40 },
+visible: { opacity: 1, y: 0 },
+};
+const OurStatement = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,20 +24,34 @@ const Sustainability = () => {
 
   return (
     <>
-      <div
-        className="bg-cover bg-center h-[110vh] flex items-center justify-center"
-        style={{ backgroundImage: `url(${SustainbilityBG})` }}
-      >
-        <h1 className="text-5xl text-white font-bold mb-4">
-          Sustainability
-        </h1>
-      </div>
-
-      <SustainabilityComp
-        title="Mission"
-        description={missionText}
-        icon={missionIcon}
-      />
+      <SectionWrapperReverse>
+        <div
+          className="bg-cover bg-center h-[90vh] flex items-center justify-center"
+          style={{ backgroundImage: `url(${SustainbilityBG})` }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            <h1 className="text-5xl text-white font-bold">Our Statement</h1>
+          </motion.div>
+        </div>
+      </SectionWrapperReverse>
+       <motion.div
+                variants={cardAnimation}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+              >
+        <SustainabilityComp
+          title="Mission"
+          description={missionText}
+          icon={missionIcon}
+        />
+      
       <SustainabilityComp
         title="Vision"
         description={visionText}
@@ -43,8 +62,9 @@ const Sustainability = () => {
         description={goalsText}
         icon={goalsIcon}
       />
+      </motion.div>
     </>
   );
 };
 
-export default Sustainability;
+export default OurStatement;

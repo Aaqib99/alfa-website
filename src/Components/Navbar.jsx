@@ -10,8 +10,8 @@ import {
   FaInstagram,
   FaUser,
   FaGlobe,
-  FaTwitter,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import ReactCountryFlag from "react-country-flag";
@@ -54,7 +54,7 @@ const Navbar = () => {
       // path: "/who-we-are",
       submenu: [
         { name: "Group Overview", path: "/groupoverview" },
-        { name: "Our Statement", path: "/sustainability" },
+        { name: "Our Statement", path: "/our-statement" },
         { name: "Core Values", path: "/core-values" },
         { name: "Our Strategy", path: "/our-strategy" },
         { name: "Meet Our Leadership", path: "/meet-our-leadership" },
@@ -238,7 +238,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter
+                <FaXTwitter
                   className={`${
                     isSticky ? "text-black" : "text-white"
                   } hover:text-[#2C95D2]`}
@@ -293,39 +293,37 @@ const Navbar = () => {
               </div>
               <button onClick={toggleMenu} className="group cursor-pointer">
                 {!isOpen ? (
-                  <div className="flex flex-col space-y-1 relative">
+                  <div className="flex z-[9999] flex-col space-y-1 relative">
                     {/* Top Line */}
                     <span
-                      className={`block w-4 h-[2px] ${
-                        isSticky ? "bg-black" : "bg-white"
-                      } group-hover:bg-[#2C95D2]`}
-                    />
-
-                    {/* Middle Line (shorter) */}
-                    <span
-                      className={`block w-2 h-[2px] ${
+                      className={`block w-4 h-[3px] ${
                         isSticky ? "bg-black" : "bg-white"
                       } group-hover:bg-[#2C95D2]`}
                     />
 
                     {/* Bottom Line with dot */}
-                    <span
-                      className={`relative block w-4 h-[2px] ${
-                        isSticky ? "bg-black" : "bg-white"
-                      } group-hover:bg-[#2C95D2]`}
-                    >
+                    <span className="relative block w-3 h-[3px]">
+                      <span
+                        className={`absolute top-0 left-0 w-full h-full ${
+                          isSticky ? "bg-black" : "bg-white"
+                        } group-hover:bg-[#2C95D2] animate-wiggle-right`}
+                      />
                       <span
                         className={`absolute right-[-6px] top-1/2 -translate-y-1/2 w-1 h-1 rounded-full ${
                           isSticky ? "bg-black" : "bg-white"
-                        } group-hover:bg-[#2C95D2]`}
+                        } group-hover:bg-[#2C95D2] animate-dot-wiggle`}
                       />
                     </span>
                   </div>
-                ) : (
-                  <FaTimes
-                    className={`${isSticky ? "text-black" : "text-white"}`}
-                  />
-                )}
+                ) : ""
+                //  (
+                //   <FaTimes onClick={closeMenu}
+                //     className={`
+                //         ${isSticky ? "text-black" : "text-white"} 
+                //         ${isOpen ? "text-red-600 z-[9999]" : "text-black"}`}
+                //   />
+                // )
+                }
               </button>
             </div>
           </div>
@@ -337,21 +335,21 @@ const Navbar = () => {
             className="fixed inset-0 bg-[#20376D]/90 text-gray-200 z-[999] bg-cover bg-center overflow-hidden animate-fadeScaleIn"
             style={{ backgroundImage: `url(${layoutbg})` }}
           >
-            {/* Header section with logo and close button */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4">
               <Link to="/" className="flex items-center mb-2 sm:mb-0">
                 <img src={logo} alt="Logo" className="h-auto w-28" />
               </Link>
-              <button
+              <IoCloseSharp onClick={closeMenu}
+                   className="cursor-pointer mr-7 mt-2 text-white text-xl sm:text-2xl transition-transform duration-50 hover:rotate-90 hover:scale-110"
+                  />
+              {/* <button
                 onClick={closeMenu}
                 className="cursor-pointer text-white text-xl sm:text-2xl transition-transform duration-50 hover:rotate-90 hover:scale-110"
               >
-                {/* <FaTimes className="font-extrabold" /> */}
                 <IoCloseSharp className="text-2xl font-extrabold transition-transform duration-50 hover:rotate-90 hover:scale-110" />
-              </button>
+              </button> */}
             </div>
 
-            {/* Grid Layout */}
             <div className="flex-grow flex justify-center items-center">
               <div className="grid lg:ml-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-4 py-1 h-full">
                 {links.map((menu, idx) => (
@@ -361,7 +359,6 @@ const Navbar = () => {
                     onMouseLeave={() => setOpenMenu(null)}
                     className="group"
                   >
-                    {/* Section Title with Icon */}
                     <div className="flex items-center cursor-pointer text-xl font-semibold mb-2 text-gray-300 hover:text-[#2C95D2]">
                       <span
                         className={`group-hover:font-bold font-poppins ${
@@ -374,14 +371,12 @@ const Navbar = () => {
                       </span>
                     </div>
 
-                    {/* Line Image */}
                     <img
                       src={linee}
                       alt=""
                       className="w-30 h-auto mb-2 opacity-10 group-hover:opacity-100 transition duration-50"
                     />
 
-                    {/* Submenu */}
                     <ul
                       className={`grid gap-1 ${
                         (menu.name === "WHO WE ARE" &&

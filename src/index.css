@@ -1,4 +1,7 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
 @theme {
   --font-poppins: Poppins, sans-serif;
 }
@@ -27,11 +30,35 @@
   animation: wiggle 1s ease-in-out infinite;
 }
 
+
 .animate-wiggle:hover {
   animation-play-state: paused;
 }
+@keyframes dot-wiggle {
+  0%, 100% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
 
+.animate-dot-wiggle {
+  animation: dot-wiggle 1.5s ease-in-out infinite;
+}
+@keyframes wiggle-right {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.8);
+  }
+}
 
+.animate-wiggle-right {
+  animation: wiggle-right 1.6s ease-in-out infinite;
+  transform-origin: left;
+}
 @keyframes fadeScaleIn {
   0% {
     opacity: 0;

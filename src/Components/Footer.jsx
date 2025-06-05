@@ -2,7 +2,8 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll"; // Import ScrollLink from react-scroll
 import logo from "../Assets/Icons/white-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import {
   faPhoneAlt,
   faEnvelope,
@@ -68,7 +69,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter className="hover:scale-110 text-white transition-colors duration-300 group-hover:text-[#20376D]" />
+                  <FaXTwitter className="hover:scale-110 text-white transition-colors duration-300 group-hover:text-[#20376D]" />
                 </a>
               </div>
             </div>

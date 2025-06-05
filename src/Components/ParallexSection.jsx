@@ -4,7 +4,7 @@ import ParallaxBG from "../Assets/Images/env-responsibility.png"; // Replace wit
 const ParallaxSection = () => {
   return (
     <div
-      className="relative h-[80vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
+      className="relative h-[100vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
       style={{ backgroundImage: `url(${ParallaxBG})` }}
     >
       <div className="bg-opacity-50 p-6 rounded-lg text-center max-w-2xl mx-4">

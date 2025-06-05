@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Components/Navbar.jsx";
 import Home from "./Views/Home.jsx";
 import AboutUs from "./Views/AboutUs.jsx";
@@ -10,8 +10,8 @@ import GetStarted from "./Views/GetStarted.jsx";
 import GroupOverview from "./Views/GroupOverview.jsx";
 import Footer from "./Components/Footer.jsx";
 import ReadMore from "./Views/ReadMore.jsx";
-import Sustainability from "./Views/Sustainability.jsx";
-import OurValues from "./Views/OurValues.jsx";
+import Sustainability from "./Views/OurStatement.jsx";
+import OurValues from "./Views/CoreValues.jsx";
 import Strategy from "./Views/Strategy.jsx";
 import Leadership from "./Views/Leadership.jsx";
 import Facility from "./Views/Facility.jsx";
@@ -40,8 +40,27 @@ import CookiesPolicy from "./Views/CookiesPolicy.jsx";
 import TermsAndConditions from "./Views/TermsAndConditions.jsx";
 import OurCulture from "./Views/OurCulture.jsx";
 import TestNavbar from "./Components/Navbar.jsx";
+import Lenis from "@studio-freight/lenis";
+import OurStatement from "./Views/OurStatement.jsx";
+import CoreValues from "./Views/CoreValues.jsx";
 
 function App() {
+  //  useEffect(() => {
+  //   const lenis = new Lenis({duration: 0.09, // Just slightly slower (default is 1)
+  //     easing: (t) => t, // Linear, no fake bounce
+  //     smooth: true,
+  //     gestureOrientation: 'vertical',
+  //   });
+
+  //   function raf(time) {
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
+
+  //   requestAnimationFrame(raf)
+
+  //   return () => lenis.destroy()
+  // }, [])
   return (
     <>
       <Router>
@@ -53,7 +72,9 @@ function App() {
             {/* Who We are */}
             <Route exact path="/" element={<Home />} />
             <Route exact path="/services" element={<Services />} />
-            <Route exact path="/core-values" element={<OurValues />} />
+            <Route exact path="/groupoverview" element={<GroupOverview />} />
+            <Route exact path="/our-statement" element={<OurStatement />} />
+            <Route exact path="/core-values" element={<CoreValues />} />
             <Route exact path="/our-strategy" element={<Strategy />} />
             <Route exact path="/meet-our-leadership" element={<Leadership />} />
             <Route exact path="/our-culture" element={<OurCulture />} />
@@ -131,8 +152,6 @@ function App() {
               element={<TermsAndConditions />}
             />
 
-            <Route exact path="/sustainability" element={<Sustainability />} />
-            <Route exact path="/groupoverview" element={<GroupOverview />} />
             <Route exact path="/readmoreaboutcompany" element={<AboutUs />} />
             <Route exact path="/portfolio" element={<Portfolio />} />
             <Route exact path="/getstarted" element={<GetStarted />} />
