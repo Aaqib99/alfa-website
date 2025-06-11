@@ -48,7 +48,7 @@ const CommercialInquiries = () => {
           >
             Commercial Inquiries
           </h1>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             We welcome your commercial inquiries and value your interest in our
             services. Please feel free to reach out to us directly via email or
             phone, and our dedicated team will respond promptly to assist with

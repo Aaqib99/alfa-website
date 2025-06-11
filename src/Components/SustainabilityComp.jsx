@@ -9,7 +9,7 @@ const SustainabilityComp = ({ title, description, icon }) => {
           <div className="inline-block bg-[#20376D] text-white text-sm font-bold px-4 py-1 rounded-md mb-4">
             {title.toUpperCase()}
           </div>
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className="text-gray-700 text-justify text-lg leading-relaxed">
             {description}
           </p>
         </div>

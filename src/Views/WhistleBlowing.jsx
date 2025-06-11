@@ -88,10 +88,10 @@ const WhistleBlowing = () => {
             </li>
           </ul>
           <p className="mt-8" style={{ color: "#20376D" }}>
-            ALFA will not retaliate — and will not tolerate retaliation —
-            against any individual for reporting good-faith concern or
-            complaint, or for participating in the investigation of any
-            complaint.
+            ALFA strictly prohibits any form of retaliation and will not take any
+            adverse action against individuals who, in good faith, report a
+            concern or complaint, or who participate in the investigation of
+            such matters
           </p>
           <div className="flex flex-col items-center justify-center mt-10 -mb-24">
             <div className="container px-4 py-8 flex flex-wrap justify-center gap-12">

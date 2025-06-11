@@ -1,6 +1,9 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll"; // Import ScrollLink from react-scroll
 import logo from "../Assets/Icons/white-logo.svg";
+import Footerphone from "../Assets/Icons/footer-phone.svg";
+// import { ReactComponent as PhoneIcon } from "../Assets/Icons/footer-phone.svg";
+import Footeremail from "../Assets/Icons/footer-email.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -29,15 +32,17 @@ const Footer = () => {
               <div className="flex items-center flex-wrap sm:flex-nowrap gap-2 sm:gap-4">
                 <a
                   href="tel:+966138052528"
-                  className="whitespace-nowrap text-[#2C95D2] hover:text-white cursor-pointer"
+                  className="flex items-center gap-1 whitespace-nowrap text-[#2C95D2] hover:text-white"
                 >
+                  <img src={Footerphone} alt="Phone" className="w-4 h-4" />
                   +966 13 805 2528
                 </a>
-                <span className="whitespace-nowrap text-white">|</span>
+                <span className="whitespace-nowrap text-white ml-2">|</span>
                 <a
                   href="mailto:info@alfamarinesa.com"
-                  className="whitespace-nowrap text-[#2C95D2] hover:text-white cursor-pointer"
+                  className="flex items-center gap-1 -ml-1 whitespace-nowrap text-[#2C95D2] hover:text-white cursor-pointer"
                 >
+                  <img src={Footeremail} alt="Email" className="mt-1 w-4 h-4" />
                   info@alfamarinesa.com
                 </a>
               </div>
@@ -123,7 +128,7 @@ const Footer = () => {
                     to="/our-facilities"
                     className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                   >
-                    Facility
+                    Our Facilities
                   </Link>
                 </li>
                 <li>
@@ -147,7 +152,7 @@ const Footer = () => {
                     to="/marine-and-offshore-division"
                     className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                   >
-                    Marine
+                    Marine & Offshore
                   </Link>
                 </li>
               </ul>
@@ -191,7 +196,7 @@ const Footer = () => {
         <div className="flex justify-between items-center w-full">
           <div>
             <p className="text-xs text-white">
-              Copyright © 2025 Alfa Technologies. All Rights Reserved.
+              Copyright © 2025 ALFA Technologies. all rights reserved.
             </p>
           </div>
           <div className="flex items-center gap-x-2">

@@ -73,7 +73,7 @@ const HeroSection = () => {
       {/* Circles (Indicators) with Mouse Shape */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3">
         {/* Mouse shape with animated dot */}
-        <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center relative overflow-hidden">
+        <div className="hidden sm:flex w-6 h-10 border-2 border-white rounded-full flex items-start justify-center relative overflow-hidden">
           <div className="w-2 h-2 bg-[#2C95D2] rounded-full animate-scroll-dot mt-1"></div>
         </div>
 
@@ -90,7 +90,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Navigation Arrows */}
-      <div className="absolute top-1/2 left-3 transform -translate-y-1/2 z-20 group">
+      <div className="absolute hidden md:block top-1/2 left-3 transform -translate-y-1/2 z-20 group">
         <button
           onClick={() =>
             setCurrentIndex((prevIndex) =>
@@ -115,7 +115,7 @@ const HeroSection = () => {
           </svg>
         </button>
       </div>
-      <div className="absolute top-1/2 right-3 transform -translate-y-1/2 z-20 group">
+      <div className="absolute hidden md:block top-1/2 right-3 transform -translate-y-1/2 z-20 group">
         <button
           onClick={() =>
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)

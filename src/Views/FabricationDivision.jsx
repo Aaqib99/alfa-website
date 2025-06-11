@@ -34,7 +34,6 @@ const FabricationDivision = () => {
         </div>
       </SectionWrapperReverse>
       <div className="relative bg-[#20376D] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-start">
           {/* Text Section */}
           <motion.div
             variants={cardAnimation}
@@ -43,14 +42,15 @@ const FabricationDivision = () => {
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           >
+        <div className="max-w-9xl mx-auto px-2 py-16 grid md:grid-cols-2 gap-6 items-start">
             <div>
-              <h2 className="text-sm font-semibold text-[#2C95D2] uppercase mb-2">
+              <h2 className="text-sm ml-6 font-semibold text-[#2C95D2] uppercase mb-2">
                 What We Do
               </h2>
-              <h1 className="text-2xl sm:text-3xl font-bold uppercase mb-4">
-                Marine & Offshore Division
+              <h1 className="text-2xl ml-6 sm:text-3xl font-bold uppercase mb-4">
+                Fabrication & Machining Division
               </h1>
-              <div className="space-y-4 text-sm leading-relaxed text-justify">
+              <div className="space-y-4 ml-6 text-sm leading-relaxed text-justify">
                 <p>
                   <span className="font-bold">
                     ALFA’s Fabrication & Machining Division
@@ -73,7 +73,7 @@ const FabricationDivision = () => {
               </div>
 
               {/* Core Services */}
-              <div className="mt-6">
+              <div className="mt-6 ml-6">
                 <h3 className="font-semibold text-white mb-2">
                   Our Core Services
                 </h3>
@@ -117,17 +117,17 @@ const FabricationDivision = () => {
                 </ul>
               </div>
             </div>
-          </motion.div>
 
           {/* Image Section */}
-          <div className="flex justify-center items-end mt-24">
+          <div className="flex justify-center items-end mt-9">
             <img
               src={marineImage}
               alt="Marine & Offshore"
               className="max-w-full h-auto object-contain"
-            />
+              />
           </div>
         </div>
+              </motion.div>
       </div>
     </>
   );

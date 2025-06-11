@@ -82,7 +82,7 @@ const DownloadCenter = () => {
           >
             Download Center
           </h1>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             ALFA is a prominent player in the marine, offshore, oil & gas,
             renewable energy, and defense sectors within Saudi Arabia and
             beyond, renowned for its expertise and commitment to excellence.

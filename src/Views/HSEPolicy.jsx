@@ -30,9 +30,10 @@ const HSEPolicy = () => {
     <>
       <SectionWrapperReverse>
         <div
-          className="bg-cover bg-center h-[90vh] flex items-center justify-center"
+          className="bg-contain bg-center h-[90vh] flex items-center justify-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
+          <div className="absolute inset-0 h-110 bg-black/70 h-[90vh]"></div>
           {/* Overlay Content */}
           <div className="relative flex flex-col items-center justify-center h-full text-white">
             <motion.div
@@ -58,9 +59,9 @@ const HSEPolicy = () => {
             className="text-4xl font-bold mb-4 text-center md:text-left"
             style={{ color: "#20376D" }}
           >
-            Health, Safety & Enviromental (HSE) Policy
+            Health, Safety & Environmental (HSE) Policy
           </h1>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             ALFA is dedicated to providing a safe and secure workplace for
             employees, clients, contractors, suppliers/vendors, and visitors
             across all facilities and project sites. We believe that through

@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import sustainability from "../Assets/Images/ceo-image.jpeg";
+import sustainability from "../Assets/Images/ceomessage1.jpg";
 
 const CeoMessage = () => {
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex flex-col gap-16 md:flex-row md:justify-between p-6 mt-8 mb-16">
+    <div className="container mx-auto">
+      <div className="flex flex-col gap-32 md:flex-row md:justify-between pl-12 mt-16 mb-16">
         
         {/* Left Section - Animate on scroll repeatedly */}
         <motion.div
@@ -50,7 +50,7 @@ const CeoMessage = () => {
 
         {/* Right Section - Image animate on scroll repeatedly */}
         <motion.div
-          className="md:w-2/5 flex justify-center md:justify-end mr-12"
+          className="md:w-4/5 flex justify-center md:justify-end mr-2"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
@@ -59,8 +59,8 @@ const CeoMessage = () => {
           <img
             src={sustainability}
             alt="CEO"
-            className="w-full max-w-sm shadow-lg mt-24"
-            style={{ maxHeight: "400px", objectFit: "cover" }}
+            className="w-full shadow-lg"
+            style={{ objectFit: "cover" }}
           />
         </motion.div>
       </div>

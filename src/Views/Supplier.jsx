@@ -45,14 +45,14 @@ const Supplier = () => {
           >
             Become a Supplier
           </h1>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             Maintaining a robust and dependable supplier network is integral to
             our continued success. At ALFA, we foster long lasting relationships
             with our partners and strive to create an ecosystem where everyone
             can thrive together. Join us to unlock boundless opportunities in
             the Middle East region and worldwide and propel your future growth.
           </p>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             These documents must be filled in and attached to the{" "}
             <span className="font-bold" style={{ color: "#20376D" }}>
               ALFA Supplier Registration Portal.

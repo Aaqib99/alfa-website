@@ -34,23 +34,23 @@ const FacilityManagement = () => {
         </div>
       </SectionWrapperReverse>
       <div className="relative bg-[#20376D] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-start">
-          {/* Text Section */}
-          <motion.div
-            variants={cardAnimation}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-          >
+        {/* Text Section */}
+        <motion.div
+          variants={cardAnimation}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+        >
+          <div className="max-w-9xl mx-auto px-2 py-16 grid md:grid-cols-2 gap-6 items-start">
             <div>
-              <h2 className="text-sm font-semibold text-[#2C95D2] uppercase mb-2">
+              <h2 className="text-sm ml-6 font-semibold text-[#2C95D2] uppercase mb-2">
                 What We Do
               </h2>
-              <h1 className="text-2xl sm:text-3xl font-bold uppercase mb-4">
+              <h1 className="text-2xl ml-6 sm:text-3xl font-bold uppercase mb-4">
                 Facility Management Division
               </h1>
-              <div className="space-y-4 text-sm leading-relaxed text-justify">
+              <div className="space-y-4 ml-6 text-sm leading-relaxed text-justify">
                 <p>
                   <span className="font-bold">ALFA's</span> Facility Management
                   Division ensures smooth operation and maintenance of buildings
@@ -63,12 +63,12 @@ const FacilityManagement = () => {
               </div>
 
               {/* Core Services */}
-              <div className="mt-6">
+              <div className="mt-6 ml-6">
                 <h3 className="font-semibold text-white mb-2">
                   Our Core Services
                 </h3>
                 <ul className="list-disc list-inside text-sm space-y-1">
-                  <ul className="relative mt-4 mb-4 pl-5 before:content-['➤'] before:absolute before:left-0 before:text-red-500">
+                  <ul className="relative pl-5 mt-4 mb-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-red-500">
                     Technical Operations & Maintenance
                   </ul>
                   <p>
@@ -86,7 +86,7 @@ const FacilityManagement = () => {
                   </li>
                 </ul>
                 <ul className="list-disc list-inside text-sm space-y-1">
-                  <ul className="relative mt-4 mb-4 pl-5 before:content-['➤'] before:absolute before:left-0 before:text-red-500">
+                  <ul className="relative pl-5 mt-4 mb-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-red-500">
                     Office & Mover Services
                   </ul>
                   <li>
@@ -116,7 +116,7 @@ const FacilityManagement = () => {
                   </li>
                 </ul>
                 <ul className="list-disc list-inside text-sm space-y-1">
-                  <ul className="relative mt-4 mb-4 pl-5 before:content-['➤'] before:absolute before:left-0 before:text-red-500">
+                  <ul className="relative pl-5 mt-4 mb-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-red-500">
                     Soft Services
                   </ul>
                   <li>
@@ -137,7 +137,7 @@ const FacilityManagement = () => {
                   </li>
                 </ul>
                 <ul className="list-disc list-inside text-sm space-y-1">
-                  <ul className="relative mt-4 mb-4 pl-5 before:content-['➤'] before:absolute before:left-0 before:text-red-500">
+                  <ul className="relative pl-5 mt-4 mb-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-red-500">
                     Catering Services
                   </ul>
                   <li>
@@ -147,17 +147,17 @@ const FacilityManagement = () => {
                 </ul>
               </div>
             </div>
-          </motion.div>
 
-          {/* Image Section */}
-          <div className="flex justify-center items-end mt-24">
-            <img
-              src={marineImage}
-              alt="Marine & Offshore"
-              className="max-w-full h-auto object-contain"
-            />
+            {/* Image Section */}
+            <div className="flex justify-center items-end mt-9">
+              <img
+                src={marineImage}
+                alt="Marine & Offshore"
+                className="max-w-full h-auto object-contain"
+              />
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import NewsCard from "../Components/NewsCard";
 import image1 from "../Assets/Images/GroupOverview.jpeg";
-import image2 from "../Assets/Images/ceo-image.jpeg";
+import image2 from "../Assets/Images/ceomessage1.jpg";
 import backgroundImage from "../Assets/Images/aboutcompanyimage.jpg";
 import SectionWrapperReverse from "../Components/SectionWrapperReverse";
 import { motion } from "framer-motion";

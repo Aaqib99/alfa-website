@@ -95,11 +95,11 @@ const AlfaAtGlance = () => {
             WAY
           </h1>
           <p className="max-w-3xl mx-auto leading-relaxed text-base font-light">
-            At <strong>ALFA Group</strong>, we are driven by a simple yet
-            powerful vision: to provide our clients with exceptional services
-            and solutions that exceed expectations and create lasting value.
-            Since our establishment in
-            <strong> 2014</strong>.
+            From the first consultation to final handover, we follow a
+            structured, <strong>client-focused approach</strong>. Every phase
+            from design and procurement to construction is driven by
+            <strong>precision, quality,</strong> and a commitment to delivering
+            lasting value.
           </p>
         </motion.div>
 

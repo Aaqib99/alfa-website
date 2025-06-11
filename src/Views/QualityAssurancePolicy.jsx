@@ -48,14 +48,14 @@ const QualityAssurancePolicy = () => {
           >
             Quality Assurance Policy
           </h1>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             At ALFA, we are committed to delivering high-quality, professional,
             and efficient services that meet and exceed the expectations of our
             clients. Our goal is to ensure long-term sustainability and
             profitability for the organization, underpinned by a strong customer
             focus and continuous improvement in every aspect of our operations.
           </p>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             Our Management Team plays a critical role in this commitment, taking
             responsibility for establishing, implementing, integrating, and
             maintaining our Quality Management System (QMS). By ensuring that
@@ -63,14 +63,14 @@ const QualityAssurancePolicy = () => {
             guarantee that our QMS supports the achievement of our quality
             objectives.
           </p>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             We foster a Quality Culture throughout the company by promoting open
             communication, providing ongoing training, and encouraging active
             engagement. Each employee understands the importance of the Quality
             System, their responsibility in contributing to its effectiveness,
             and how it directly impacts the success of the organization.
           </p>
-          <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+          <p className="text-lg mt-4 text-justify" style={{ color: "#20376D" }}>
             Every team member is trained and empowered to perform the duties
             required by their role in maintaining the highest quality standards.
             Our Quality System is regularly monitored, measured, evaluated, and

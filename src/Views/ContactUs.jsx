@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import backgroundImage from "../Assets/Images/markup.png";
 import contactuscall from "../Assets/Icons/callus.svg";
 import contactusemail from "../Assets/Icons/emailus.svg";
-import ContactUsInside from "../Assets/Images/contact-us-inside.jpg";
+import ContactUsInside from "../Assets/Images/contactus5.png";
 import { motion } from "framer-motion";
 import SectionWrapperReverse from "../Components/SectionWrapperReverse";
 
@@ -264,7 +264,7 @@ const ContactUs = () => {
               </form>
 
               {/* Image - 30% and same height as form */}
-              <div className="hidden md:block md:w-[30%] md:mt-0">
+              <div className="hidden md:block md:w-[30%]">
                 <div className="h-full">
                   <img
                     src={ContactUsInside}

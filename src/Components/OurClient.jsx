@@ -42,7 +42,7 @@ const logos = [
 const OurClients = () => {
   return (
     <div className="w-full bg-white py-10 overflow-hidden">
-      <motion.h2
+      <motion.div
         className="text-3xl font-bold text-center text-blue-900 mb-8 mt-18"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -53,7 +53,7 @@ const OurClients = () => {
             <span className="text-[#2C95D2] font-semibold mr-2">OUR</span>
             <span className="text-[#20376D] font-bold mr-2">CLIENTS</span>
           </h1>
-      </motion.h2>
+      </motion.div>
 
       <div className="relative w-full mt-18">
         <motion.div

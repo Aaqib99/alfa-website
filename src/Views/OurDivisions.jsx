@@ -193,7 +193,7 @@ function OurDivisions() {
                 className="text-3xl md:text-4xl font-bold mb-2"
                 style={{ color: "#20376D" }}
               >
-                Our Divisions
+                ALFA Divisions
               </h3>
               <p className="text-lg text-gray-700" style={{ color: "#20376D" }}>
                 Expert teams and robust systems drive each division to deliver
@@ -215,7 +215,7 @@ function OurDivisions() {
         <div className="overflow-hidden px-6 mt-2">
           <div
             ref={containerRef}
-            className="flex gap-6 overflow-x-scroll no-scrollbar select-none"
+            className="flex gap-6 md:gap-14 overflow-x-scroll no-scrollbar select-none px-4 sm:px-6"
             onMouseDown={startDrag}
             onMouseLeave={endDrag}
             onMouseUp={endDrag}
@@ -230,7 +230,7 @@ function OurDivisions() {
               return (
                 <div
                   key={index}
-                  className={`w-full sm:w-1/2 md:w-1/3 flex-shrink-0 transition-transform duration-300 ease-in-out ${
+                  className={`w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-shrink-0 transition-transform duration-300 ease-in-out ${
                     isCenter ? "scale-105" : "scale-95"
                   }`}
                 >

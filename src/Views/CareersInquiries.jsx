@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import backgroundImage from "../Assets/Images/careers.png";
+import backgroundImage from "../Assets/Images/careers.jpg";
 import { motion } from "framer-motion";
-import ContactUsInside from "../Assets/Images/contact-us-inside.jpg";
+import ContactUsInside from "../Assets/Images/career3.jpg";
 import SectionWrapperReverse from "../Components/SectionWrapperReverse";
 
 // import AboutUSComp from '../Components/AboutUSComp';
@@ -17,6 +17,10 @@ const CareersInquiries = () => {
           className="bg-cover bg-center h-[90vh] flex items-center justify-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
+          
+          <div className="absolute inset-0 h-110 bg-black/60 h-[90vh]"></div>
+          <div className="relative flex flex-col items-center justify-center h-full text-white">
+
           <motion.div
             // className="md:w-2/2 mb-6 md:mb-0"
             initial={{ opacity: 0, y: 100 }}
@@ -26,6 +30,7 @@ const CareersInquiries = () => {
           >
             <h1 className="text-5xl text-white font-bold">Careers</h1>
           </motion.div>
+          </div>
         </div>
       </SectionWrapperReverse>
       <motion.div

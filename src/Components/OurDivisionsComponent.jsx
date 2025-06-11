@@ -26,9 +26,8 @@ const OurDivisionsComponent = () => {
             >
               Our Divisions
             </h3>
-            <p className="text-lg text-gray-700" style={{ color: "#20376D" }}>
-              ALFA Group Established in 2014 and headquartered in Dammam, Saudi
-              Arabia. ALFA Group is a steadily growing multi-division company
+            <p className="text-lg text-gray-700 text-justify" style={{ color: "#20376D" }}>
+              ALFA Group is a steadily growing multi-division company
               supporting major industries across the Middle East. We specialize
               as a reliable subcontractor, delivering high-quality Engineering
               Support, Procurement Assistance, Fabrication & Construction(EPFC)

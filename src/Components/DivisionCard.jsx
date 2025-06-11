@@ -21,7 +21,8 @@ const DivisionCard = ({
   return (
     <>
       <div
-        className="relative text-white h-[70vh] w-[70vh] overflow-hidden flex flex-col justify-between p-6 z-10"
+        className="relative text-white overflow-hidden flex flex-col justify-between p-6 z-10 
+  w-full max-w-[90vw] aspect-[1/1.2] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[350px]"
         style={{
           backgroundImage:
             isCenter && hasAnimated
@@ -53,7 +54,7 @@ const DivisionCard = ({
         {/* Title + Description (Animate only if centered) */}
         {isCenter ? (
           <motion.div
-            className="space-y-2"
+            className="space-y-1"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -62,7 +63,7 @@ const DivisionCard = ({
             <p className="text-sm leading-relaxed">{description}</p>
           </motion.div>
         ) : (
-          <div className="space-y-2 opacity-90">
+          <div className="space-y-1 opacity-90">
             <p className="text-lg font-bold">{title}</p>
             <p className="text-sm leading-relaxed">{description}</p>
           </div>
@@ -95,8 +96,8 @@ const DivisionCard = ({
         </Link>
 
         {/* Rotated Label Block */}
-        <div className="absolute bottom-48 right-0 transform translate-y-1/2 rotate-[-90deg] origin-bottom-right">
-          <div className="bg-[#2C95D2] h-24 w-36 shadow-md flex items-center justify-center">
+        <div className="absolute bottom-54 right-0 transform translate-y-1/2 rotate-[-90deg] origin-bottom-right">
+          <div className="bg-[#2C95D2] h-24 w-42 shadow-md flex items-center justify-center">
             {label}
           </div>
         </div>
