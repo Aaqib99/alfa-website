@@ -41,11 +41,9 @@ const HeroSection = () => {
           >
             WHERE SUSTAINABILITY & EXCELLENCE CONVERGE
           </h1>
-
-          <a
-            href="/readmoreaboutcompany"
-            target="_blank"
-            rel="noopener noreferrer"
+          
+          <Link
+            to="/readmoreaboutcompany"
             className="relative inline-flex items-center gap-2 mt-10 px-6 py-3 rounded-full text-lg font-bold shadow-lg
     text-white bg-[#2196F3] transition-all duration-500 cursor-pointer group overflow-hidden"
           >
@@ -67,7 +65,7 @@ const HeroSection = () => {
               />
             </svg>
             <span className="absolute inset-0 bg-[#20376D] transition-all duration-500 transform -translate-x-full group-hover:translate-x-0 z-0"></span>
-          </a>
+          </Link>
         </div>
       </div>
       {/* Circles (Indicators) with Mouse Shape */}
