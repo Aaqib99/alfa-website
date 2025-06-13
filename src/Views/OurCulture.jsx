@@ -59,13 +59,13 @@ const OurCulture = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-          className="flex items-center justify-center bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto mt-12 text-center"
+          className="flex items-center justify-center bg-white p-8 mb-12 rounded-xl shadow-lg max-w-5xl mx-auto mt-12 text-center"
         >
           <div className="flex flex-col">
             <h3 className="text-2xl font-bold text-[#20376D]">
               {section.heading}
             </h3>
-            <p className="text-[#4B5563] text-justify mt-4 text-base leading-relaxed whitespace-pre-line">
+            <p className="text-[#20376D] text-justify mt-4 text-base leading-relaxed whitespace-pre-line">
               {section.text}
             </p>
           </div>

@@ -58,7 +58,7 @@ const Strategy = () => {
         >
           Core Strategic Pillars
         </h2>
-        <p className="container mx-auto px-8 md:px-12 lg:px-24 flex flex-col items-center justify-center mt-12 mb-8">
+        <p className="container mx-auto px-8 md:px-12 lg:px-24 flex flex-col items-center justify-center mt-12 mb-8" style={{ color: "#20376D" }}>
           At ALFA, we are committed to delivering differentiated and competitive
           products and solutions to the energy sector, creating sustainable
           value across all aspects of our operations.

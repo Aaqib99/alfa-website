@@ -39,7 +39,7 @@ const Capability = () => {
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
       >
-        <div className="max-w-4xl mx-auto px-6 py-10 text-[#2C2C2C]">
+        <div className="max-w-4xl mx-auto px-6 py-10 text-[#20376D]">
           <p className="mb-6 text-justify text-sm sm:text-base">
             ALFA GROUP offers end-to-end capabilities across multiple sectors,
             allowing us to deliver tailored and comprehensive solutions under

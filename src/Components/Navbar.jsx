@@ -49,11 +49,11 @@ const Navbar = () => {
       // path: "/who-we-are",
       submenu: [
         { name: "Group Overview", path: "/groupoverview" },
-        { name: "MISSION, VISION, GOAL", path: "/our-statement" },
+        { name: "Mission, Vision, Goal", path: "/our-statement" },
         { name: "Core Values", path: "/core-values" },
         { name: "Our Strategy", path: "/our-strategy" },
         // { name: "Meet Our Leadership", path: "/meet-our-leadership" },
-        { name: "Meet Our Leadership", },
+        { name: "Meet Our Leadership" },
         { name: "Our Culture", path: "/our-culture" },
         { name: "Our Facilities", path: "/our-facilities" },
         { name: "Our Capabilities", path: "/our-capabilities" },
@@ -102,7 +102,7 @@ const Navbar = () => {
       name: "MEDIA CENTER",
       // path: "/media",
       submenu: [
-        { name: "News", path: "/news" },
+        { name: "News" },
         { name: "Download Center", path: "/download-center" },
       ],
     },
@@ -245,7 +245,7 @@ const Navbar = () => {
                   isSticky ? "bg-black" : "bg-white"
                 }`}
               />
-              <a href="https://login.microsoftonline.com/...">
+              <a href="https://outlook.com/alfamarinesa.com">
                 <FaUser
                   className={`hidden md:flex ${
                     isSticky ? "text-black" : "text-white"
@@ -334,24 +334,22 @@ const Navbar = () => {
             className="fixed inset-0 bg-[#20376D]/90 text-gray-200 z-[999] bg-cover bg-center overflow-hidden animate-fadeScaleIn"
             style={{ backgroundImage: `url(${layoutbg})` }}
           >
+            {/* Header: Logo left, Close right */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4">
-              <Link to="/" className="flex items-center mb-2 sm:mb-0">
-                <img src={logo} alt="Logo" className="h-auto w-28" />
-              </Link>
-              <IoCloseSharp
-                onClick={closeMenu}
-                className="cursor-pointer mr-7 mt-2 text-white text-xl sm:text-2xl transition-transform duration-50 hover:rotate-90 hover:scale-110"
-              />
-              {/* <button
-                onClick={closeMenu}
-                className="cursor-pointer text-white text-xl sm:text-2xl transition-transform duration-50 hover:rotate-90 hover:scale-110"
-              >
-                <IoCloseSharp className="text-2xl font-extrabold transition-transform duration-50 hover:rotate-90 hover:scale-110" />
-              </button> */}
+              <div className="flex w-full justify-between items-center">
+                <Link to="/" className="flex items-center">
+                  <img src={logo} alt="Logo" className="h-auto w-28" />
+                </Link>
+                <IoCloseSharp
+                  onClick={closeMenu}
+                  className="cursor-pointer text-white text-2xl transition-transform duration-50 hover:rotate-90 hover:scale-110"
+                />
+              </div>
             </div>
 
-            <div className="flex-grow flex justify-center items-center">
-              <div className="grid lg:ml-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-16 py-1 h-full">
+            {/* Menu Items */}
+            <div className="flex-1 justify-center items-center overflow-y-auto max-h-[90vh] pt-10 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible sm:max-h-none">
+              <div className="grid lg:ml-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-4 sm:px-16 py-1 h-fit w-full">
                 {links.map((menu, idx) => (
                   <div
                     key={idx}
@@ -359,14 +357,8 @@ const Navbar = () => {
                     onMouseLeave={() => setOpenMenu(null)}
                     className="group"
                   >
-                    <div className="flex items-center cursor-pointer text-xl font-semibold mb-2 text-gray-300 hover:text-[#2C95D2]">
-                      <span
-                        className={`group-hover:font-bold font-poppins ${
-                          openMenu === menu.name
-                            ? "font-bold font-poppins text-[#2C95D2]"
-                            : ""
-                        }`}
-                      >
+                    <div className="flex items-center cursor-pointer text-xl font-semibold mb-2 text-white hover:text-[#2C95D2]">
+                      <span className="font-bold font-poppins text-[#2C95D2] sm:text-white sm:group-hover:text-[#2C95D2]">
                         {menu.name}
                       </span>
                     </div>
@@ -394,11 +386,7 @@ const Navbar = () => {
                           <Link
                             to={sub.path}
                             onClick={closeMenu}
-                            className={`block py-1 px-1 rounded transition-all duration-50 ${
-                              openMenu === menu.name
-                                ? "opacity-100 text-white"
-                                : "opacity-10 text-gray-400"
-                            } hover:opacity-100 hover:text-[#2C95D2]`}
+                            className={`block py-1 px-1 rounded transition-all duration-50 text-white sm:text-white lg:text-white ${openMenu === menu.name ? "lg:opacity-100" : "lg:opacity-10"} lg:hover:opacity-100 lg:hover:text-[#2C95D2]`}
                           >
                             {sub.name}
                           </Link>

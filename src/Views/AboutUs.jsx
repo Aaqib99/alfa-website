@@ -56,17 +56,17 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="w-full p-4 md:p-24">
-        <h1 className="text-4xl font-bold mb-4 text-center md:text-left" style={{ color: "#20376D" }}>
+        <h1 className="font-poppins text-4xl font-bold mb-4 text-center md:text-left" style={{ color: "#20376D" }}>
           Where Sustainability & Excellence Converge
         </h1>
-        <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+        <p className="font-poppins text-justify text-lg mt-4" style={{ color: "#20376D" }}>
           ALFA & Offshore Division, a proud part of the ALFA Group, stands as a
           leading ISO-certified company headquartered in Saudi Arabia. We are
           renowned for our expertise in Lump Sum Turnkey (LSTK) Projects,
           tailored to the marine, offshore, oil & gas, renewable energy, and
           defense sectors.
         </p>
-        <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+        <p className="font-poppins text-justify text-lg mt-4" style={{ color: "#20376D" }}>
           ALFA Group Established in 2014 and headquartered in Dammam, Saudi
           Arabia. ALFA Group is a steadily growing multi-division company
           supporting major industries across the Middle East. We specialize as a
@@ -80,7 +80,7 @@ const AboutUs = () => {
           satisfaction, backed by ISO certifications and adherence to
           international standards.
         </p>
-        <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+        <p className="font-poppins text-justify text-lg mt-4" style={{ color: "#20376D" }}>
           We invest continuously in skilled manpower, advanced technologies, and
           operational excellence to support the success of our clients’
           projects.
@@ -176,7 +176,7 @@ const AboutUs = () => {
         <div className="flex flex-col gap-16 md:flex-row md:justify-between p-6 mb-16">
           <div className="md:w-3/2 mb-6 md:mb-0">
             <h1
-              className="text-4xl font-bold mb-4 text-center md:text-left"
+              className="font-poppins text-4xl font-bold mb-4 text-center md:text-left"
               style={{ color: "#20376D" }}
             >
               Architectural, HVAC, Electrical, Plumbing, & Carpentry Services
@@ -207,7 +207,7 @@ const AboutUs = () => {
             <img src={thermal} alt="About Us" className="mr-24 w-48 h-48" />
           </div>
         </div>
-        <p className="text-lg mt-4" style={{ color: "#20376D" }}>
+        <p className="font-poppins text-justify text-lg mt-4" style={{ color: "#20376D" }}>
           With a strong commitment to excellence and innovation, ALFA provides
           state-of-the-art modular building solutions. These services meet
           rigorous industry standards ATEX, IECEx, NORSOK, NFPA, AWS or any

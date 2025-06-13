@@ -22,7 +22,7 @@ const DivisionCard = ({
     <>
       <div
         className="relative text-white overflow-hidden flex flex-col justify-between p-6 z-10 
-  w-full max-w-[90vw] aspect-[1/1.2] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[350px]"
+   max-w-[92vw] aspect-[1/1.2] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[350px]"
         style={{
           backgroundImage:
             isCenter && hasAnimated

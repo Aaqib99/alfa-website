@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-20" style={{ backgroundColor: "#20376D" }}>
+    <footer className="relative" style={{ backgroundColor: "#20376D" }}>
       <div className="relative mx-auto max-w-screen-xl space-y-8 px-8 py-16 sm:px-12 lg:space-y-16 lg:px-16">
         <div className="grid grid-cols-1 gap-32 lg:grid-cols-3">
           <div>

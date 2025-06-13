@@ -3,6 +3,7 @@ import marineImage from "../Assets/Images/marine2a.png";
 import backgroundImage from "../Assets/Images/main-background.jpg";
 import SectionWrapperReverse from "../Components/SectionWrapperReverse";
 import { motion } from "framer-motion";
+import SustainbilityBG from "../Assets/Images/SustainbilityBG.png";
 const cardAnimation = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },

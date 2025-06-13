@@ -30,7 +30,7 @@ const HSEPolicy = () => {
     <>
       <SectionWrapperReverse>
         <div
-          className="bg-contain bg-center h-[90vh] flex items-center justify-center"
+          className="bg-cover bg-center h-[90vh] flex items-center justify-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <div className="absolute inset-0 h-110 bg-black/70 h-[90vh]"></div>
@@ -42,7 +42,11 @@ const HSEPolicy = () => {
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h1 className="text-5xl font-bold text-center">HSE Policy</h1>
+              <div className="flex items-center lg:mt-120 md:mt-90 justify-center min-h-screen text-center sm:block">
+                <h1 className="text-5xl font-bold">
+                  HSE Policy
+                </h1>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -27,9 +27,11 @@ const QualityAssurancePolicy = () => {
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h1 className="text-5xl font-bold text-center">
-                Quality Assurance Policy
-              </h1>
+              <div className="flex items-center lg:mt-120 md:mt-90 justify-center min-h-screen text-center sm:block">
+                <h1 className="text-5xl font-bold">
+                  Quality Assurance Policy
+                </h1>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -80,7 +82,7 @@ const QualityAssurancePolicy = () => {
           </p>
         </div>
       </motion.div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-12">
         <img
           src={aboutinnerbg}
           alt="About Background"

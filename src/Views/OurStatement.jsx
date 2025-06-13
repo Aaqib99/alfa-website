@@ -35,7 +35,7 @@ const OurStatement = () => {
             transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            <h1 className="text-5xl text-white font-bold">Our Statement</h1>
+            <h1 className="font-poppins text-5xl text-white font-bold">Our Mission, Vision & Goals</h1>
           </motion.div>
         </div>
       </SectionWrapperReverse>

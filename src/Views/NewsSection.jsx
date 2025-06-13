@@ -67,7 +67,7 @@ const NewsSection = () => {
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
       >
-        <div className="mt-12 flex justify-center items-center min-h-screen bg-gray-50">
+        <div className="mt-12 mb-12 flex justify-center items-center min-h-screen bg-gray-50">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {newsList.map((news, index) => (
               <NewsCard

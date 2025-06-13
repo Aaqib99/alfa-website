@@ -71,6 +71,16 @@ const ContactUs = () => {
 
             {/* Main Flex Layout */}
             <div className="flex flex-col md:flex-row items-stretch">
+              {/* Image - 30% and same height as form */}
+              <div className="hidden md:block md:w-[30%]">
+                <div className="h-full">
+                  <img
+                    src={ContactUsInside}
+                    alt="Contact Illustration"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
               {/* Form - 70% */}
               <form
                 className="bg-gray-100 p-6 md:w-[70%] w-full"
@@ -80,7 +90,7 @@ const ContactUs = () => {
               >
                 {/* Company Name */}
                 <div className="mb-4">
-                  <label className="block text-gray-700 font-bold mb-2">
+                  <label className="block text-[#20376D] font-bold mb-2">
                     Company Name
                   </label>
                   <input
@@ -94,7 +104,7 @@ const ContactUs = () => {
                 {/* First & Last Name */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2">
+                    <label className="block text-[#20376D] font-bold mb-2">
                       First Name
                     </label>
                     <input
@@ -105,7 +115,7 @@ const ContactUs = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2">
+                    <label className="block text-[#20376D] font-bold mb-2">
                       Last Name
                     </label>
                     <input
@@ -120,7 +130,7 @@ const ContactUs = () => {
                 {/* Email & Phone */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2">
+                    <label className="block text-[#20376D] font-bold mb-2">
                       Email
                     </label>
                     <input
@@ -132,7 +142,7 @@ const ContactUs = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2">
+                    <label className="block text-[#20376D] font-bold mb-2">
                       Mobile No
                     </label>
                     <div className="flex">
@@ -187,7 +197,7 @@ const ContactUs = () => {
 
                 {/* Job Title */}
                 <div className="mb-4">
-                  <label className="block text-gray-700 font-bold mb-2">
+                  <label className="block text-[#20376D] font-bold mb-2">
                     Job Title
                   </label>
                   <input
@@ -200,7 +210,7 @@ const ContactUs = () => {
 
                 {/* Job Description */}
                 <div className="mb-4">
-                  <label className="block text-gray-700 font-bold mb-2">
+                  <label className="block text-[#20376D] font-bold mb-2">
                     Job Description
                   </label>
                   <textarea
@@ -213,7 +223,7 @@ const ContactUs = () => {
 
                 {/* CAPTCHA (fake for demo) */}
                 <div className="mb-4">
-                  <label className="block text-gray-700 font-bold mb-2">
+                  <label className="block text-[#20376D] font-bold mb-2">
                     CAPTCHA
                   </label>
                   <input
@@ -234,7 +244,7 @@ const ContactUs = () => {
                     required
                     className="mr-2"
                   />
-                  <label className="text-sm text-gray-700">
+                  <label className="text-sm text-[#20376D]">
                     I agree to the{" "}
                     <a
                       href="/privacy-policy"
@@ -263,16 +273,7 @@ const ContactUs = () => {
                 </button>
               </form>
 
-              {/* Image - 30% and same height as form */}
-              <div className="hidden md:block md:w-[30%]">
-                <div className="h-full">
-                  <img
-                    src={ContactUsInside}
-                    alt="Contact Illustration"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
+              
             </div>
           </div>
         </motion.div>

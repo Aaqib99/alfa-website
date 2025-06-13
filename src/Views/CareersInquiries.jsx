@@ -59,7 +59,7 @@ const CareersInquiries = () => {
             >
               {/* Form Fields */}
               <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">
+                <label className="block text-[#20376D] font-bold mb-2">
                   Name
                 </label>
                 <input
@@ -72,7 +72,7 @@ const CareersInquiries = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-700 font-bold mb-2">
+                  <label className="block text-[#20376D] font-bold mb-2">
                     Email <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -84,7 +84,7 @@ const CareersInquiries = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-bold mb-2">
+                  <label className="block text-[#20376D] font-bold mb-2">
                     Phone Number <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -98,7 +98,7 @@ const CareersInquiries = () => {
               </div>
 
               <div className="mt-4">
-                <label className="block text-gray-700 font-bold mb-2">
+                <label className="block text-[#20376D] font-bold mb-2">
                   Upload Your CV <span className="text-red-500">*</span>
                 </label>
                 <input

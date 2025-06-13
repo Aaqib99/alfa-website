@@ -7,8 +7,8 @@ const CoreValuesComp = ({ icon, title, description }) => {
         <img src={icon} alt="Icon" className="object-cover w-full h-full" />
       </div>
       <div className="p-4 text-center">
-        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-        <p className="text-sm text-gray-600 mt-2">{description}</p>
+        <h3 className="text-lg font-semibold text-gray-800" style={{ color: "#20376D" }}>{title}</h3>
+        <p className="text-sm text-gray-600 mt-2" style={{ color: "#20376D" }}>{description}</p>
       </div>
       {/* <div className="absolute bottom-2 right-2 text-gray-400 text-2xl">
         &rsaquo;

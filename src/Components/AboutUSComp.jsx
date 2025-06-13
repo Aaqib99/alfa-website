@@ -31,7 +31,7 @@ const AboutUSComp = () => {
             >
               About Company
             </h3>
-            <p className="text-lg text-gray-700" style={{ color: "#20376D" }}>
+            <p className="text-justify text-lg text-gray-700" style={{ color: "#20376D" }}>
               ALFA Group is a trusted and steadily growing multi-division
               company (Head Quarters) based in Dammam, Saudi Arabia and
               expanding across the Middle East. Since our Inception in 2014, we
@@ -51,7 +51,7 @@ const AboutUSComp = () => {
             ABOUT US
           </h5>
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4 mt-6"
+            className="font-poppins text-3xl md:text-4xl font-bold mb-4 mt-6"
             style={{ color: "#20376D" }}
           >
             Mission is: <br />

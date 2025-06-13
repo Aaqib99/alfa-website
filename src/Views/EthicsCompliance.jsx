@@ -25,9 +25,11 @@ const EthicsCompliance = () => {
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h1 className="text-5xl font-bold text-center">
-                Ethics & Compliance
-              </h1>
+              <div className="flex items-center lg:mt-120 md:mt-90 justify-center min-h-screen text-center sm:block">
+                <h1 className="text-5xl font-bold">
+                  Ethics & Compliance
+                </h1>
+              </div>
             </motion.div>
           </div>
         </div>

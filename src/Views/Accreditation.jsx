@@ -41,7 +41,7 @@ const Accreditation = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
         >
-          <p className="mb-6 text-justify text-sm sm:text-base">
+          <p className="mb-6 text-justify text-sm sm:text-base text-[#20376D]">
             We are fully committed to maintaining compliance with industry
             standards and best practices. ALFA Group is proud to hold multiple
             ISO certifications and adhere to global quality standards across all

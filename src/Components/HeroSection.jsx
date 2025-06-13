@@ -43,7 +43,7 @@ const HeroSection = () => {
           </h1>
 
           <a
-            href="readmoreaboutcompany"
+            href="/readmoreaboutcompany"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center gap-2 mt-10 px-6 py-3 rounded-full text-lg font-bold shadow-lg

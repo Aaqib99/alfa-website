@@ -101,8 +101,8 @@ const DownloadCenter = () => {
               <div key={idx} className="flex items-start space-x-4">
                 <div>{item.icon}</div>
                 <div className="flex-1">
-                  <h2 className="font-bold text-lg">{item.title}</h2>
-                  <p className="text-gray-500 text-sm">{item.description}</p>
+                  <h2 className="font-bold text-lg text-[#20376D]">{item.title}</h2>
+                  <p className="font-poppins text-sm text-[#20376D]">{item.description}</p>
                   <div className="mt-2 space-x-2">
                     {item.buttons.map((btn, bIdx) => (
                       <a
