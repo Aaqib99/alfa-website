@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import backgroundImage from "../Assets/Images/qap2a.png";
-import aboutinnerbg from "../Assets/Images/QAPImage.png";
+import aboutinnerbg from "../Assets/Icons/QAPImage.svg";
 import SectionWrapperReverse from "../Components/SectionWrapperReverse";
 import { motion } from "framer-motion";
 const cardAnimation = {
@@ -19,6 +19,7 @@ const QualityAssurancePolicy = () => {
           className="bg-cover bg-center h-[90vh] flex items-center justify-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
+          <div className="absolute inset-0 h-110 bg-black/80 h-[90vh]"></div>
           {/* Overlay Content */}
           <div className="relative flex flex-col items-center justify-center h-full text-white">
             <motion.div
@@ -28,9 +29,7 @@ const QualityAssurancePolicy = () => {
               viewport={{ once: false, amount: 0.3 }}
             >
               <div className="flex items-center lg:mt-120 md:mt-90 justify-center min-h-screen text-center sm:block">
-                <h1 className="text-5xl font-bold">
-                  Quality Assurance Policy
-                </h1>
+                <h1 className="text-5xl font-bold">Quality Assurance Policy</h1>
               </div>
             </motion.div>
           </div>
@@ -86,7 +85,7 @@ const QualityAssurancePolicy = () => {
         <img
           src={aboutinnerbg}
           alt="About Background"
-          // className="max-w-full max-h-full"
+          className="w-full sm:w-[400px] md:w-[500px] lg:w-[800px] xl:w-[800px] h-auto mx-auto"
         />
       </div>{" "}
     </>

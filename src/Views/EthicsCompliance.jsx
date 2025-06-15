@@ -17,6 +17,7 @@ const EthicsCompliance = () => {
           className="bg-cover bg-center h-[90vh] flex items-center justify-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
+          <div className="absolute inset-0 h-110 bg-black/70 h-[90vh]"></div>
           {/* Overlay Content */}
           <div className="relative flex flex-col items-center justify-center h-full text-white">
             <motion.div

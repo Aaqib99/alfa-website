@@ -276,7 +276,7 @@ const Navbar = () => {
                     }`}
                     onMouseLeave={() => setLangDropdownOpen(false)}
                   >
-                    <ul className="w-32">
+                    <ul className="w-24">
                       <li className="hover:bg-[#2C95D2] pl-4 py-2 cursor-pointer">
                         EN
                       </li>
