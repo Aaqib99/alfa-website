@@ -53,7 +53,7 @@ const CareersInquiries = () => {
             {/* Form - Wider (75-80%) */}
             <form
               className="bg-gray-100 p-6 md:w-[75%] w-full self-stretch"
-              action="https://getform.io/f/awnwqovb"
+              action="https://getform.io/f/bkkndzxb"
               method="POST"
               encType="multipart/form-data"
             >

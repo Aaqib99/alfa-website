@@ -25,9 +25,22 @@ const HeroSection = () => {
   return (
     <div
       id="home"
-      className="relative bg-cover bg-center h-[110vh] transition-all duration-500"
-      style={{ backgroundImage: `url(${images[currentIndex]})` }}
+      className="relative h-[110vh] overflow-hidden"
+      // style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source
+          src="https://alfamarinesa.com/videos/promo.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
 
@@ -41,7 +54,7 @@ const HeroSection = () => {
           >
             WHERE SUSTAINABILITY & EXCELLENCE CONVERGE
           </h1>
-          
+
           <Link
             to="/readmoreaboutcompany"
             className="relative inline-flex items-center gap-2 mt-10 px-6 py-3 rounded-full text-lg font-bold shadow-lg
