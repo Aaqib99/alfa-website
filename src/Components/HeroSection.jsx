@@ -10,30 +10,31 @@ import bg5 from "../Assets/Images/main3a.png";
 import bg6 from "../Assets/Images/main3.jpg";
 
 const HeroSection = () => {
-  const images = [bg1, bg4, bg3, bg2, bg5, bg6];
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const images = [bg1, bg4, bg3, bg2, bg5, bg6];
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-switch images every 1 second
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //   }, 2000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
-    <div
-      id="home"
-      className="relative h-[110vh] overflow-hidden"
-      // style={{ backgroundImage: `url(${images[currentIndex]})` }}
-    >
+    <div className="relative h-[100vh] sm:h-[100vh] md:h-[110vh] lg:h-[110vh] xl:h-[110vh] overflow-hidden">
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        preload="auto"
+        poster={`${bg1}`}
+        className="absolute inset-0 w-full h-full object-cover object-center z-0
+             sm:h-full sm:w-full
+             md:h-full md:w-full
+             lg:h-full lg:w-full
+             xl:h-full xl:w-full"
       >
         <source
           src="https://alfamarinesa.com/videos/promo.mp4"
@@ -41,11 +42,12 @@ const HeroSection = () => {
         />
         Your browser does not support the video tag.
       </video>
+
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
 
       {/* Content */}
-      <div className="absolute inset-0 z-10 flex items-center justify-start">
+      {/* <div className="absolute inset-0 z-10 flex items-center justify-start">
         <div className="text-left px-4 md:px-18 max-w-3xl mt-2">
           <h1
             className="font-poppins text-2xl md:text-4xl font-bold"
@@ -80,16 +82,16 @@ const HeroSection = () => {
             <span className="absolute inset-0 bg-[#20376D] transition-all duration-500 transform -translate-x-full group-hover:translate-x-0 z-0"></span>
           </Link>
         </div>
-      </div>
+      </div> */}
       {/* Circles (Indicators) with Mouse Shape */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3">
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3">
         {/* Mouse shape with animated dot */}
         <div className="hidden sm:flex w-6 h-10 border-2 border-white rounded-full flex items-start justify-center relative overflow-hidden">
           <div className="w-2 h-2 bg-[#2C95D2] rounded-full animate-scroll-dot mt-1"></div>
         </div>
 
         {/* Dots */}
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
           {images.map((_, index) => (
             <span
               key={index}
@@ -98,10 +100,10 @@ const HeroSection = () => {
               }`}
             ></span>
           ))}
-        </div>
+        </div> */}
       </div>
       {/* Navigation Arrows */}
-      <div className="absolute hidden md:block top-1/2 left-3 transform -translate-y-1/2 z-20 group">
+      {/* <div className="absolute hidden md:block top-1/2 left-3 transform -translate-y-1/2 z-20 group">
         <button
           onClick={() =>
             setCurrentIndex((prevIndex) =>
@@ -125,13 +127,12 @@ const HeroSection = () => {
             />
           </svg>
         </button>
-      </div>
-      <div className="absolute hidden md:block top-1/2 right-3 transform -translate-y-1/2 z-20 group">
+      </div> */}
+      {/* <div className="absolute hidden md:block top-1/2 right-3 transform -translate-y-1/2 z-20 group">
         <button
           onClick={() =>
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
           }
-          // className="focus:outline-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +149,7 @@ const HeroSection = () => {
             />
           </svg>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

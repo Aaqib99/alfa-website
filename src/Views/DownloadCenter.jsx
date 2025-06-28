@@ -22,7 +22,7 @@ const DownloadCenter = () => {
       buttons: [
         {
           label: "Download PDF",
-          file: "/Downloads/profile.pdf",
+          // file: "/Downloads/profile.pdf",
           className: "bg-[#20376D]",
         },
       ],

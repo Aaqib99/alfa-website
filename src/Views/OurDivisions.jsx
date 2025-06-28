@@ -140,13 +140,25 @@ function OurDivisions() {
     startX.current = e.pageX || e.touches[0].pageX;
     scrollLeft.current = containerRef.current.scrollLeft;
   };
-  const scrollByAmount = () => containerRef.current.offsetWidth / 1;
- const scrollLeftFunc = () => {
-    containerRef.current.scrollBy({ left: -scrollByAmount(), behavior: "smooth" });
+  const scrollByAmount = () => {
+    const containerWidth = containerRef.current.offsetWidth;
+    const cardWidth =
+      containerRef.current.querySelector("div")?.offsetWidth ||
+      containerWidth / 3;
+    return cardWidth * 1.05; // Smooth scroll per card
+  };
+  const scrollLeftFunc = () => {
+    containerRef.current.scrollBy({
+      left: -scrollByAmount(),
+      behavior: "smooth",
+    });
   };
 
   const scrollRightFunc = () => {
-    containerRef.current.scrollBy({ left: scrollByAmount(), behavior: "smooth" });
+    containerRef.current.scrollBy({
+      left: scrollByAmount(),
+      behavior: "smooth",
+    });
   };
   const endDrag = () => {
     isDragging.current = false;
@@ -163,7 +175,7 @@ function OurDivisions() {
     const container = containerRef.current;
     const scrollLeftVal = container.scrollLeft;
     const width = container.offsetWidth;
-    const cardWidth = container.querySelector('div')?.offsetWidth || width / 3;
+    const cardWidth = container.querySelector("div")?.offsetWidth || width / 3;
     const index = Math.round(scrollLeftVal / cardWidth);
     setCenterIndex(index);
 
@@ -186,7 +198,7 @@ function OurDivisions() {
 
   return (
     <>
-      <div className="mt-24 flex items-center justify-center">
+      <div className="mt-24 flex items-center justify-center ">
         <div className="container mx-auto px-4 md:px-8 flex flex-col items-center justify-center">
           <motion.div
             className="md:w-2/2 mb-6 md:mb-0"
@@ -220,34 +232,39 @@ function OurDivisions() {
         }}
       >
         <div className="overflow-hidden sm:px-0 md:px-4 lg:px-6 mt-2">
-          <div
-            ref={containerRef}
-            className="flex gap-6 sm:gap-2 md:gap-14 overflow-x-scroll no-scrollbar select-none sm:px-0 md:px-4 lg:px-6"
-            onMouseDown={startDrag}
-            onMouseLeave={endDrag}
-            onMouseUp={endDrag}
-            onMouseMove={onDrag}
-            onTouchStart={startDrag}
-            onTouchMove={onDrag}
-            onTouchEnd={endDrag}
-            style={{ cursor: "grab" }}
-          >
-            {loopedCards.map((card, index) => {
-              const isCenter = index === centerIndex;
-              return (
-                <div
-                  key={index}
-                  className={`sm:w-1/2 md:w-2/3 lg:w-1/3 flex-shrink-0 transition-transform duration-300 ease-in-out ${
-                    isCenter ? "scale-105" : "scale-95"
-                  }`}
-                >
-                  <DivisionCard {...card} isCenter={isCenter} />
-                </div>
-              );
-            })}
+          <div className="max-w-[1600px] mx-auto">
+            <div
+              ref={containerRef}
+              className="flex gap-6 sm:gap-2 md:gap-14 overflow-x-scroll no-scrollbar select-none sm:px-0 md:px-4 lg:px-6"
+              onMouseDown={startDrag}
+              onMouseLeave={endDrag}
+              onMouseUp={endDrag}
+              onMouseMove={onDrag}
+              onTouchStart={startDrag}
+              onTouchMove={onDrag}
+              onTouchEnd={endDrag}
+              style={{ cursor: "grab" }}
+            >
+              {loopedCards.map((card, index) => {
+                const isCenter = index === centerIndex;
+                return (
+                  <div
+                    key={index}
+                    className={`w-[85vw] sm:w-1/2 md:w-2/3 lg:w-1/3 xl:max-w-[450px] flex-shrink-0 transition-transform duration-300 ease-in-out ${
+                      isCenter ? "scale-105" : "scale-95"
+                    }`}
+                  >
+                    <DivisionCard {...card} isCenter={isCenter} />
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className="flex justify-center mt-4 gap-6 md:hidden">
-            <button onClick={scrollLeftFunc} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+            <button
+              onClick={scrollLeftFunc}
+              className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-700"
@@ -256,10 +273,17 @@ function OurDivisions() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
-            <button onClick={scrollRightFunc} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+            <button
+              onClick={scrollRightFunc}
+              className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-700"
@@ -268,7 +292,11 @@ function OurDivisions() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           </div>

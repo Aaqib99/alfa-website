@@ -48,6 +48,7 @@ const Navbar = () => {
       name: "WHO WE ARE",
       // path: "/who-we-are",
       submenu: [
+        { name: "About Us", path: "/readmoreaboutcompany" },
         { name: "Group Overview", path: "/groupoverview" },
         { name: "Mission, Vision, Goal", path: "/our-statement" },
         { name: "Core Values", path: "/core-values" },
