@@ -22,7 +22,7 @@ const HeroSection = () => {
   // }, []);
 
   return (
-    <div className="relative h-[100vh] sm:h-[100vh] md:h-[110vh] lg:h-[110vh] xl:h-[110vh] overflow-hidden">
+    <div className="relative h-[100vh] sm:h-[100vh] md:h-[110vh] lg:h-[110vh] xl:h-[110vh]">
       <video
         autoPlay
         muted
@@ -30,7 +30,7 @@ const HeroSection = () => {
         playsInline
         preload="auto"
         poster={`${bg1}`}
-        className="absolute inset-0 w-full h-full object-cover object-center z-0
+        className="absolute inset-0 w-full h-full object-cover object-center z-40
              sm:h-full sm:w-full
              md:h-full md:w-full
              lg:h-full lg:w-full
@@ -84,7 +84,7 @@ const HeroSection = () => {
         </div>
       </div> */}
       {/* Circles (Indicators) with Mouse Shape */}
-      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3">
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center gap-3">
         {/* Mouse shape with animated dot */}
         <div className="hidden sm:flex w-6 h-10 border-2 border-white rounded-full flex items-start justify-center relative overflow-hidden">
           <div className="w-2 h-2 bg-[#2C95D2] rounded-full animate-scroll-dot mt-1"></div>
