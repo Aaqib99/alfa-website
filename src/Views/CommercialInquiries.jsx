@@ -66,7 +66,7 @@ const CommercialInquiries = () => {
               Email Us
             </span>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"s
               className="w-4 h-4 relative z-10 group-hover:text-[#2196F3] transition duration-500"
               fill="none"
               viewBox="0 0 24 24"

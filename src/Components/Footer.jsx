@@ -97,10 +97,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/readmoreaboutcompany"
+                    to="/groupoverview"
                     className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                   >
-                    About us
+                    Group Overview
                   </Link>
                 </li>
                 <li>

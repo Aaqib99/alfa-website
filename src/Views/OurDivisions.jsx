@@ -130,7 +130,7 @@ const loopedCards = [...cards.slice(-3), ...cards, ...cards.slice(0, 3)];
 
 function OurDivisions() {
   const containerRef = useRef(null);
-  const [centerIndex, setCenterIndex] = useState(3); // 3 is the start of real cards in looped list
+  const [centerIndex, setCenterIndex] = useState(3); 
   const isDragging = useRef(false);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
@@ -209,12 +209,12 @@ function OurDivisions() {
           >
             <div className="md:w-full text-center">
               <h3
-                className="text-3xl md:text-4xl font-bold mb-2"
+                className="text-3xl md:text-4xl font-bold mb-6"
                 style={{ color: "#20376D" }}
               >
                 ALFA Divisions
               </h3>
-              <p className="text-lg text-gray-700" style={{ color: "#20376D" }}>
+              <p className="text-lg text-gray-700 mb-6" style={{ color: "#20376D" }}>
                 Expert teams and robust systems drive each division to deliver
                 projects that are timely, safe, and value-packed.
               </p>
@@ -235,7 +235,7 @@ function OurDivisions() {
           <div className="max-w-[1600px] mx-auto">
             <div
               ref={containerRef}
-              className="flex gap-6 sm:gap-2 md:gap-14 overflow-x-scroll no-scrollbar select-none sm:px-0 md:px-4 lg:px-6"
+              className="flex gap-6 sm:gap-2 md:gap-14 overflow-x-scroll scroll-smooth no-scrollbar select-none sm:px-0 md:px-4 lg:px-6"
               onMouseDown={startDrag}
               onMouseLeave={endDrag}
               onMouseUp={endDrag}
@@ -266,7 +266,7 @@ function OurDivisions() {
               className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-700"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -285,7 +285,7 @@ function OurDivisions() {
               className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-700"
                 fill="none"
                 viewBox="0 0 24 24"

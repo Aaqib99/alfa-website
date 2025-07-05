@@ -55,7 +55,7 @@ function CoreValues() {
             />
             <CoreValuesComp
               icon={collborationSvg}
-              title="Collboration"
+              title="Collaboration"
               description="We works together to reflect the “Power of One” and create synergies and minimize organizational boundaries and works across them effectively."
             />
             <CoreValuesComp

@@ -10,9 +10,6 @@ import OurClients from "../Components/OurClient";
 import SectionWrapper from "../Components/SectionWrapper";
 import OurDivisions from "./OurDivisions";
 import ParallaxSection from "../Components/ParallexSection";
-// import Counter from '../Components/Counter';
-// import PortfolioComp from '../Components/PortfolioComp';
-// import TestimonialComp from '../Components/TestimonialComp';
 
 const Home = () => {
   useEffect(() => {

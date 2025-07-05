@@ -52,7 +52,7 @@ const CareersInquiries = () => {
           <div className="flex flex-col md:flex-row items-stretch">
             {/* Form - Wider (75-80%) */}
             <form
-              className="bg-gray-100 p-6 md:w-[75%] w-full self-stretch"
+              className="bg-gray-100 p-6 md:w-full w-full self-stretch"
               action="https://getform.io/f/bkkndzxb"
               method="POST"
               encType="multipart/form-data"
@@ -118,7 +118,7 @@ const CareersInquiries = () => {
             </form>
 
             {/* Image - 25% and same height as form */}
-            <div className="hidden md:block md:w-[25%]">
+            {/* <div className="hidden md:block md:w-[25%]">
               <div className="h-full">
                 <img
                   src={ContactUsInside}
@@ -126,7 +126,7 @@ const CareersInquiries = () => {
                   className="h-full w-full object-cover"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.div>

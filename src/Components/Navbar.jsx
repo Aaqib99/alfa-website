@@ -48,9 +48,9 @@ const Navbar = () => {
       name: "WHO WE ARE",
       // path: "/who-we-are",
       submenu: [
-        { name: "About Us", path: "/readmoreaboutcompany" },
+        // { name: "About Us", path: "/readmoreaboutcompany" },
         { name: "Group Overview", path: "/groupoverview" },
-        { name: "Mission, Vision, Goal", path: "/our-statement" },
+        { name: "Mission, Vision & Goals", path: "/our-statement" },
         { name: "Core Values", path: "/core-values" },
         { name: "Our Strategy", path: "/our-strategy" },
         // { name: "Meet Our Leadership", path: "/meet-our-leadership" },
@@ -124,7 +124,7 @@ const Navbar = () => {
     <>
       {!isOpen && (
         <div
-          className={`fixed w-full z-50 h-16 px-4 py-2 flex justify-between items-center ${
+          className={`fixed w-full z-50 h-16 px-8 py-9 flex justify-between items-center ${
             isSticky ? "bg-white" : "bg-transparent"
           }`}
         >
@@ -132,9 +132,9 @@ const Navbar = () => {
           <div className="flex items-center justify-center">
             <Link to="/" className="flex items-center">
               <img
-                src={isSticky ? ColorLogo : logo}
+                src={isSticky || window.innerWidth < 768 ? ColorLogo : logo}
                 alt="Logo"
-                className={`h-auto w-38`}
+                  className="h-auto w-38 transition-transform duration-300 ease-in-out hover:scale-95"
               />
             </Link>
           </div>
@@ -264,7 +264,7 @@ const Navbar = () => {
               >
                 <div
                   className={`flex items-center space-x-1 ${
-                    isSticky ? "text-black" : "text-white"
+                    isSticky || window.innerWidth < 768 ? "text-black" : "text-white"
                   } hover:text-blue-400`}
                 >
                   <FaGlobe />
@@ -277,7 +277,7 @@ const Navbar = () => {
                     }`}
                     onMouseLeave={() => setLangDropdownOpen(false)}
                   >
-                    <ul className="w-24">
+                    <ul className="w-16 sm:w-12 md:w-16 lg:w-16 xl:w-22">
                       <li className="hover:bg-[#2C95D2] pl-4 py-2 cursor-pointer">
                         EN
                       </li>
@@ -295,20 +295,25 @@ const Navbar = () => {
                       {/* Top Line */}
                       <span
                         className={`block w-4 h-[3px] ${
-                          isSticky ? "bg-black" : "bg-white"
+                          isSticky || window.innerWidth < 768 ? "bg-black" : "bg-white"
                         } group-hover:bg-[#2C95D2]`}
                       />
+                      {/* <span
+                        className={`block w-4 h-[3px] ${
+                          isSticky || window.innerWidth < 768 ? "bg-black" : "bg-white"
+                        } group-hover:bg-[#2C95D2]`}
+                      /> */}
 
                       {/* Bottom Line with dot */}
                       <span className="relative block w-3 h-[3px]">
                         <span
                           className={`absolute top-0 left-0 w-full h-full ${
-                            isSticky ? "bg-black" : "bg-white"
+                            isSticky || window.innerWidth < 768 ? "bg-black" : "bg-white"
                           } group-hover:bg-[#2C95D2] animate-wiggle-right`}
                         />
                         <span
                           className={`absolute right-[-6px] top-1/2 -translate-y-1/2 w-1 h-1 rounded-full ${
-                            isSticky ? "bg-black" : "bg-white"
+                            isSticky || window.innerWidth < 768 ? "bg-black" : "bg-white"
                           } group-hover:bg-[#2C95D2] animate-dot-wiggle`}
                         />
                       </span>
@@ -316,13 +321,6 @@ const Navbar = () => {
                   ) : (
                     ""
                   )
-                  //  (
-                  //   <FaTimes onClick={closeMenu}
-                  //     className={`
-                  //         ${isSticky ? "text-black" : "text-white"}
-                  //         ${isOpen ? "text-red-600 z-[9999]" : "text-black"}`}
-                  //   />
-                  // )
                 }
               </button>
             </div>

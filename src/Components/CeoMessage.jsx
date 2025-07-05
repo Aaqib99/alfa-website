@@ -5,14 +5,13 @@ import sustainability from "../Assets/Images/ceomessage1.jpg";
 const CeoMessage = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col gap-32 md:flex-row md:justify-between pl-12 mt-16 mb-16">
-        
+      <div className="flex flex-col gap-32 px-8 md:flex-row md:justify-between md:pl-12 lg:pl-12 mt-16 mb-16">
         {/* Left Section - Animate on scroll repeatedly */}
         <motion.div
           className="md:w-2/2 mb-6 md:mb-0"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1,delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }}
         >
           <h1
@@ -21,7 +20,10 @@ const CeoMessage = () => {
           >
             CEO Message
           </h1>
-          <div className="text-lg space-y-4" style={{ color: "#20376D" }}>
+          <div
+            className="text-lg text-justify space-y-4"
+            style={{ color: "#20376D" }}
+          >
             <p>
               At ALFA Group, we are driven by a simple yet powerful vision: to
               provide our clients with exceptional services and solutions that
@@ -30,9 +32,11 @@ const CeoMessage = () => {
             <p>
               Since our establishment in 2014, we have worked tirelessly to
               build a company that thrives on quality, innovation, and
-              integrity. Our growth has been shaped by our dedication to
-              safety, excellence, and customer satisfaction.
-              We are a one-stop solution provider serving diverse sectors including Oil & Gas, Renewable Energy, Marine, Defense, Construction, and more—delivering tailored solutions through our specialized divisions.
+              integrity. Our growth has been shaped by our dedication to safety,
+              excellence, and customer satisfaction. We are a one-stop solution
+              provider serving diverse sectors including Oil & Gas, Renewable
+              Energy, Marine, Defense, Construction, and more—delivering
+              tailored solutions through our specialized divisions.
             </p>
             <p>
               As we look to the future, we remain focused on our goal of

@@ -31,16 +31,16 @@ const SectionWrapper = ({
     controls.set({
       y: 0,
       clipPath: "polygon(0 0, 100% 20%, 100% 100%, 0% 100%)",
-      opacity: 100, // <--- Set opacity to 0 when not in view
+      opacity: 0, // <--- Set opacity to 0 when not in view
     });
     setWasInView(false);
   }
 
   if (inView && scrollDirection === "down" && !wasInView) {
     controls.start({
-      y: "100%",
+      y: "0",
       clipPath: "polygon(0 0, 100% 25%, 100% 100%, 0% 100%)",
-      opacity: 0.8,
+      opacity: 0,
       transition: { duration: 1.3, ease: "easeInOut" },
     });
     setWasInView(true);
@@ -63,7 +63,7 @@ const SectionWrapper = ({
         initial={{
           y: 0,
           clipPath: "polygon(0 0, 100% 20%, 100% 100%, 0% 100%)",
-          opacity: 1,
+          opacity: 0,
         }}
         animate={controls}
         className="absolute top-0 left-0 w-full h-full bg-[#20376D] z-20 pointer-events-none"
