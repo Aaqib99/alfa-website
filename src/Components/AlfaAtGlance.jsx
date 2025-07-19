@@ -71,7 +71,7 @@ const AlfaAtGlance = () => {
             delay={0.2}
           />
           <StatCard
-            number="85M+"
+            number="185M+"
             label="Valuation of Completed Projects"
             delay={0.3}
           />

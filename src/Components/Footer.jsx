@@ -100,29 +100,17 @@ const Footer = () => {
                     to="/groupoverview"
                     className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                   >
-                    Group Overview
+                    About Us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/sustainability"
+                    to="/core-values"
                     className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                   >
-                    Sustainability
+                    Core Values
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/fabrication-and-machining-division"
-                    className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
-                  >
-                    Fabrication
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul className="mt-14 space-y-4 text-lg">
                 <li>
                   <Link
                     to="/our-facilities"
@@ -133,20 +121,16 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/ict-division"
+                    to="/environmental-responsibility"
                     className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                   >
-                    ICT Division
+                    Sustainability
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/trading-division"
-                    className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
-                  >
-                    Trading
-                  </Link>
-                </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="mt-14 space-y-4 text-lg">
                 <li>
                   <Link
                     to="/marine-and-offshore-division"
@@ -155,15 +139,48 @@ const Footer = () => {
                     Marine & Offshore
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/construction-division"
+                    className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
+                  >
+                    Construction
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/fabrication-and-machining-division"
+                    className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
+                  >
+                    Fabrication
+                  </Link>
+                </li>
+                {/* <li>
+                  <Link
+                    to="/trading-division"
+                    className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
+                  >
+                    Information Technology
+                  </Link>
+                </li> */}
+                <li>
+                  <Link
+                    to="/facility-management-division"
+                    className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
+                  >
+                    Facility Management
+                  </Link>
+                </li>
+                
               </ul>
             </div>
             <ul className="mt-14 space-y-4 text-lg">
               <li>
                 <Link
-                  to="/core-values"
+                  to="/ethics-and-compliance"
                   className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                 >
-                  Core Values
+                  Ethics & Compliance
                 </Link>
               </li>
               <li>
@@ -184,10 +201,18 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/ethics-and-compliance"
+                  to="/become-a-supplier"
                   className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
                 >
-                  Ethics & Compliance
+                  Become a Supplier
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-white transition hover:text-[#2C95D2] hover:border-b-2 border-[#2C95D2] pb-1 cursor-pointer"
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>
